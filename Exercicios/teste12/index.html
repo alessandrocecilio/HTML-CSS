@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes e Pseudo-elementos</title>
+    <style>
+        body {
+            font: normal 1em Arial,Helvetica,sans-serif;
+        }
+        h1 {
+            font: italic bold 20px Arial,Helvetica,sans-serif;
+            background-color: aqua;
+            color: white;
+        }
+        a {
+            color: blue;
+            font-family: monospace;
+            text-decoration: none;
+        }
+        a:visited {
+            color: rgb(2, 2, 113);
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .especial:hover {
+            color: blueviolet;
+            background-color: beige;
+            text-decoration: none;
+        }
+        .especial::after {
+            content:'«';
+            font-weight: lighter;
+        }
+        .especial::before {
+            content:'»';
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links</h1>
+    <p>
+        Para aprender HTML5 e CSS3 
+        <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">github/gustavoguanabara</a>
+    </p>
+    <p>
+        Para os mais chegados a vídeo-aulas
+        <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank" rel="external">youtube/cursoemvideo</a> 
+    </p>
+    <p>
+        Repositorio Completo
+        <a href="https://gustavoguanabara.github.io" target="_blank" rel="external" class="especial">guanabara/repositorio </a>
+    </p>
+</body>
+</html>
